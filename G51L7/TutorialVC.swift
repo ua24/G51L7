@@ -16,8 +16,8 @@ class TutorialVC: UIViewController {
             print("kozhanuy appears")
         }
         
-        let day = ["sleep#", "lanch", "sleep"]
-        let week = [day, day, day]
+        
+//        let week = [day, day, day]
     }
     
     

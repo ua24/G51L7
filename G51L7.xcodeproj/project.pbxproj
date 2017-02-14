@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CBFC9BF1E538C8D003F9C80 /* RegistrationTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFC9BE1E538C8D003F9C80 /* RegistrationTVC.swift */; };
 		4CE86EE11E53747A00D84553 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE86EE01E53747A00D84553 /* AppDelegate.swift */; };
 		4CE86EE31E53747A00D84553 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE86EE21E53747A00D84553 /* ViewController.swift */; };
 		4CE86EE61E53747A00D84553 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE86EE41E53747A00D84553 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CBFC9BE1E538C8D003F9C80 /* RegistrationTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationTVC.swift; sourceTree = "<group>"; };
 		4CE86EDD1E53747A00D84553 /* G51L7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = G51L7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE86EE01E53747A00D84553 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CE86EE21E53747A00D84553 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				4CE86EE01E53747A00D84553 /* AppDelegate.swift */,
 				4CE86EE21E53747A00D84553 /* ViewController.swift */,
 				4CE86EE41E53747A00D84553 /* Main.storyboard */,
+				4CBFC9BE1E538C8D003F9C80 /* RegistrationTVC.swift */,
 				4CE86EF21E53777100D84553 /* TutorialVC.swift */,
 				4CE86EE71E53747A00D84553 /* Assets.xcassets */,
 				4CE86EE91E53747A00D84553 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CBFC9BF1E538C8D003F9C80 /* RegistrationTVC.swift in Sources */,
 				4CE86EF31E53777100D84553 /* TutorialVC.swift in Sources */,
 				4CE86EE31E53747A00D84553 /* ViewController.swift in Sources */,
 				4CE86EE11E53747A00D84553 /* AppDelegate.swift in Sources */,
@@ -308,6 +312,7 @@
 				4CE86EF11E53747A00D84553 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
