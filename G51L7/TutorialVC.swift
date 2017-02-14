@@ -8,11 +8,8 @@
 
 import UIKit
 
-let minute: TimeInterval = 60
 
-class TutorialVC: UIViewController {
-
-    let hour = minute * 60
+class TutorialVC: UIViewController {    
     
     @IBAction func poehaliPressed() {
         dismiss(animated: true) { 
