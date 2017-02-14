@@ -8,13 +8,19 @@
 
 import UIKit
 
+let minute: TimeInterval = 60
+
 class TutorialVC: UIViewController {
 
+    let hour = minute * 60
     
     @IBAction func poehaliPressed() {
         dismiss(animated: true) { 
             print("kozhanuy appears")
         }
+        
+        let day = ["sleep#", "lanch", "sleep"]
+        let week = [day, day, day]
     }
     
     
