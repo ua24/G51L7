@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -16,12 +16,15 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     var text = "Created by Ivan Vasilevich on 2/14/17. Copyright © 2017 Smoosh Labs. All rights reserved."
     var currentWordIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         performSegue(withIdentifier: "tutor", sender: nil)
         tableView.dataSource = self
+        tableView.delegate = self
         perform(#selector(addWord), with: nil, afterDelay: 1)
+        
     }
     
     func addWord() {
@@ -39,7 +42,6 @@ class ViewController: UIViewController, UITableViewDataSource {
         return day.count
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = "at 0\(indexPath.row.description):00\t|\t\(day[indexPath.row])"
@@ -47,7 +49,29 @@ class ViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let element = day[indexPath.row]
+        print(indexPath, element)
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? UITableViewCell {
+            if let indexPath = self.tableView.indexPath(for: cell) {
+                let element = day[indexPath.row]
+                print(indexPath, element)
+                segue.destination.title = element
+            }
+        }
+    }
+
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "2" {
+            return true
+        }
+        else {
+            return false
+        }
+    }
 
 
 }
